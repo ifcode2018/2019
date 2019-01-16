@@ -1,0 +1,24 @@
+{
+  "name": "ifcode-landing-page",
+  "version": "1.0.0",
+  "description": "Web Page do 1º Encontro de Desenvolvedores do Sertão Baiano",
+  "main": "index.html",
+  "repository": "https://github.com/ifcode2018/ifcode2018.github.io.git",
+  "author": "https://github.com/JimmyBastos",
+  "license": "MIT",
+  "scripts": {
+    "serve": "gulp"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-minifier": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-strip-json-comments": "^3.0.0",
+    "http2": "^3.3.7",
+    "purecss-sass": "^1.0.0",
+    "sass": "^1.0.0-beta.4"
+  }
+}

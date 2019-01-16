@@ -1,0 +1,53 @@
+@import '../_helpers/variables'
+
+.is
+  &--block
+    display: block
+
+  &--inline-block
+    display: inline-block
+
+  &--centered
+    margin: 0 auto
+    text-align: center
+
+  &--hidden
+    display: none !important
+
+  &--invisible
+    opacity: 0
+
+  &--visible
+    opacity: 1
+
+  &--light
+    background-color: $color-light
+    border-bottom: solid px-to-rem(1) $color-transparent-dark
+    color: $color-dark
+
+    a
+      color: $color-dark
+
+  &--dark
+    background-color: $color-dark
+    border-bottom: solid px-to-rem(1) $color-transparent-light
+    color: $color-light
+
+    a
+      color: $color-light
+
+.has
+  &--centered-text
+    text-align: center
+
+  &--dark-text
+    color: $color-dark
+
+  &--light-text
+    color: $color-light
+
+  &--dark-background
+    background-color: $color-dark
+
+  &--light-background
+    background-color: $color-light

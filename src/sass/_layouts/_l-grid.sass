@@ -1,0 +1,23 @@
+@import '../_helpers/index'
+
+.section
+  min-height: 100%
+  position: relative
+  width: 100%
+  border-bottom: solid px-to-rem(1) $color-transparent-dark
+  @include breakpoint($phone)
+    height: 100%
+
+.container
+  padding: px-to-rem(36) px-to-rem(10)
+  min-height: 100%
+  margin: 0 auto
+  @include breakpoint($phone)
+    height: 100%
+    width: 80%
+  @include breakpoint($tablet)
+    width: 70%
+  @include breakpoint($desktop)
+    width: 65%
+  @include breakpoint($lg-desktop)
+    width: 60%

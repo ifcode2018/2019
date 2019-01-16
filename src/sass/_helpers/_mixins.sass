@@ -1,0 +1,18 @@
+@import 'variables'
+
+// ======== Clear fix
+@mixin clearfix
+  &::before,
+  &::after
+    content: ''
+    display: table
+
+  &::after
+    clear: both
+
+
+// ======== Pixel para rem
+//divide o tamanho da fonte desejada no alvo em px pela fontepai em px
+@function px-to-rem($size)
+  @return $size / $font-size * 1rem
+

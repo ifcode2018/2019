@@ -1,0 +1,38 @@
+@import '../_helpers/mixins'
+.button
+  &--primary,
+  &--success,
+  &--error,
+  &--warning,
+  &--secondary
+    border-radius: px-to-rem(5)
+    color: $color-light !important
+    margin: px-to-rem(5)
+    text-shadow: none
+
+  &--success
+    background: $color-success
+
+  &--error
+    background: $color-error
+
+  &--warning
+    background: $color-warning
+
+  &--secondary
+    background: $color-secondary
+
+  &--primary
+    background: $color-primary
+
+  &--xs
+    font-size: 70%
+
+  &--sm
+    font-size: 85%
+
+  &--lg
+    font-size: 110%
+
+  &--xg
+    font-size: 125%

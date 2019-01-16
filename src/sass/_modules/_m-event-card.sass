@@ -1,0 +1,46 @@
+@import '../_helpers/index'
+
+.event
+  &-info
+    cursor: pointer
+
+  &-title
+    margin: 0
+
+  &-time
+    color: $color-secondary
+    font-size: px-to-rem(24)
+    margin: px-to-rem(24)
+
+  &-card
+    border: px-to-rem(1) solid $color-transparent-dark
+    border-top: px-to-rem(2) solid $color-secondary
+    margin-bottom: px-to-rem(20)
+    padding: px-to-rem(12)
+
+  &-description
+    display: none
+    margin-top: px-to-rem(12)
+    @include clearfix
+    @include breakpoint($tablet)
+      text-align: left
+
+    &-title
+      vertical-align: middle
+
+    &-info
+      @include clearfix
+
+    &-speaker
+      &-image
+        margin: 0 auto
+        max-width: 30%
+        @include breakpoint($tablet)
+          float: left
+          margin-right: px-to-rem(10)
+          max-width: 30%
+
+      &-link
+        font-size: px-to-rem(24)
+        margin-right: px-to-rem(12)
+        text-decoration: none

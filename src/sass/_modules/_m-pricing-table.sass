@@ -1,0 +1,29 @@
+@import '../_helpers/index'
+
+.pricing-table
+  border: px-to-rem(1) solid $color-transparent-dark
+  margin: 0 px-to-rem(8) px-to-rem(32)
+  padding: 0 0 px-to-rem(42)
+
+  &-price
+    font-size: px-to-rem(24)
+    color: $color-primary
+    display: block
+  &-icon
+    margin: 0 auto
+    padding: px-to-rem(18)
+    height: auto
+    max-width: 30%
+    transition: .1s max-width linear
+    &:hover
+      max-width: 33%
+  &-list
+    li
+      border-bottom: px-to-rem(1) solid $color-transparent-dark
+      padding: px-to-rem(14) 0
+
+.button-choose
+  border-radius: px-to-rem(20) !important
+  bottom: px-to-rem(-21)
+  position: relative
+  

@@ -1,0 +1,19 @@
+.icon-arrow
+  bottom: 0
+  color: inherit
+  display: block
+  left: 0
+  right: 0
+  width: px-to-rem(50)
+  @include breakpoint($phone)
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    position: absolute
+  
+
+  .icon
+    color: inherit
+    font-size: px-to-rem(48)
+    transition: .1s font-size linear
+    &:hover
+      font-size: px-to-rem(54)

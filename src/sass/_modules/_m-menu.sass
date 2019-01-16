@@ -1,0 +1,76 @@
+#navbar-toggle
+  background-color: $color-transparent-dark
+  padding: px-to-rem(6)
+  position: fixed;
+  right: px-to-rem(6)
+  top: px-to-rem(6)
+  z-index: 2000
+  @include breakpoint($desktop)
+    display: none
+
+  .icon
+    text-align: center
+    font-size: px-to-rem(24)
+
+.pure-menu
+  background-color: $color-light
+  border-right: px-to-rem(1) solid $color-transparent-dark
+  color: $color-dark
+  height: 100%
+  left: 0
+  display: none
+  overflow-y: auto
+  padding: px-to-rem(20)
+  position: fixed;
+  top: 0
+  width: px-to-rem(225)
+  z-index: 1000
+
+  &.active
+    display: block
+
+  &-item
+    padding: px-to-rem(8)
+
+  &-item,
+  &-heading
+    display: block
+
+  &-heading,
+  &-link
+    color: inherit
+
+    &:hover
+      background: $color-transparent-dark
+      border-radius: px-to-rem(2)
+
+  @include breakpoint($desktop)
+    background-color: transparent;
+    border-bottom: px-to-rem(1) solid $color-transparent-light
+    color: $color-light
+    display: block
+    height: auto
+    margin: 0
+    padding: px-to-rem(25)
+    transition: padding .25s linear, background .25s linear
+    width: 100%
+
+    &-list
+      float: right
+
+    &-item
+      padding: px-to-rem(0)
+
+    &-item,
+    &-heading
+      display: inline-block
+
+    &.scrolling
+      background: $color-light
+      border-bottom: px-to-rem(1) solid $color-transparent-dark
+      color: $color-dark
+      padding: px-to-rem(6)
+
+      .pure-menu-link
+        &:hover
+          background-color: $color-transparent-dark
